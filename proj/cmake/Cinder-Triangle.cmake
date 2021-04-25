@@ -6,7 +6,7 @@ if(NOT TARGET Cinder-Triangle)
     add_library(Cinder-Triangle)
 
     target_include_directories(Cinder-Triangle PUBLIC "${Cinder-Triangle_PROJECT_ROOT}/src")
-    target_include_directories(Cinder-Notifications SYSTEM BEFORE PUBLIC "${CINDER_PATH}/include")
+    target_include_directories(Cinder-Triangle SYSTEM BEFORE PUBLIC "${CINDER_PATH}/include")
 
     if(NOT TARGET cinder)
         include("${CINDER_PATH}/proj/cmake/configure.cmake")
